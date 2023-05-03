@@ -102,9 +102,9 @@ header > .container{
     max-width:100%;
 }
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 640px) {
     .container{
-        max-width: 80%;
+        max-width: 90%;
     }
     
     header{
@@ -125,4 +125,25 @@ header > .container{
         
     }
 
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 1023px) {
+        
+
+        .container{
+            max-width: 90%;
+        }
+
+        .sobre-loja > .container-flex{
+            display: block;
+            }
+
+            .produtos{
+                grid-template-columns: repeat(2, 49%);
+                display: grid;
+            }
+
+            .produtos li{
+                max-width: 100%;
+            }
     }
